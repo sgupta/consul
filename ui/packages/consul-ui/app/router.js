@@ -164,7 +164,16 @@ export const routes = {
       'auth-methods': {
         _options: { path: '/auth-methods' },
         show: {
-          _options: { path: '/show' },
+          _options: { path: '/:id' },
+          general: {
+            _options: { path: '/general-info' },
+          },
+          namespace: {
+            _options: { path: '/namespace-rules' },
+          },
+          binding: {
+            _options: { path: '/binding-rules' },
+          },
         },
       },
     },
