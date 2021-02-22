@@ -41,7 +41,7 @@ func (e EventPayloadCheckServiceNode) MatchesKey(key, namespace string) bool {
 	if e.key != "" {
 		name = e.key
 	}
-	ns := e.Value.Service.EnterpriseMeta.GetNamespace()
+	ns := e.Value.Service.EnterpriseMeta.NamespaceOrDefault()
 	return (key == "" || key == name) && (namespace == "" || namespace == ns)
 }
 
