@@ -1,5 +1,5 @@
 @setupApplicationTest
-Feature: dc / auth-methods / navigation
+Feature: dc / acls / auth-methods / navigation
   Scenario: Clicking a auth-method in the listing and back again
     Given 1 datacenter model with the value "dc-1"
     And 3 authMethod models
